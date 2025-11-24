@@ -9,7 +9,6 @@
       padding: 40px 0;
     }
 
-    /* Card that contains the list */
     .card {
       width: 520px;
       background: rgba(255,255,255,0.98);
@@ -25,7 +24,6 @@
       border-bottom: 1px solid #eee;
     }
 
-    /* The list */
     ul#band {
       list-style: none;
       margin: 0;
@@ -40,7 +38,6 @@
       font-size: 18px;
     }
 
-    /* small square bullet on the left like in the screenshot */
     ul#band li::before {
       content: "";
       display: inline-block;
@@ -52,12 +49,11 @@
       border-radius: 1px;
     }
 
-    /* last item: remove border */
+   
     ul#band li:last-child {
       border-bottom: none;
     }
 
-    /* responsive */
     @media (max-width: 560px) {
       .card { width: 92%; }
       ul#band li { padding: 16px; font-size: 16px; }
