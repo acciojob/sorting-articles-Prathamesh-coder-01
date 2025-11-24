@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  background: url("/mnt/data/218320592-e82de1d4-dca2-4a76-901a-7ca5c5b3fc95.png") center/cover fixed no-repeat;
+  background: url("https://live.staticflickr.com/395/19528721142_ab3d322494_h.jpg") center/cover fixed no-repeat;
   background-color: #f7f6f1;
   display: flex;
   justify-content: center;
@@ -29,27 +29,6 @@ ul#band li {
   border-bottom: 1px solid #eee;
   font-size: 18px;
 }
-
-ul#band li::before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: #111;
-  margin-right: 18px;
-  margin-left: -6px;
-  border-radius: 1px;
-}
-
-ul#band li:last-child {
-  border-bottom: none;
-}
-
-@media (max-width: 560px) {
-  .card { width: 92%; }
-  ul#band li { padding: 16px; font-size: 16px; }
-}
-
 
 ul#band li::before {
   content: "";
