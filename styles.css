@@ -1,60 +1,51 @@
-/*  your css code here. If applicable */
- body {
-      margin: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background: url("/mnt/data/218320592-e82de1d4-dca2-4a76-901a-7ca5c5b3fc95.png") center/cover fixed no-repeat;
-      background-color: #f7f6f1;
-      display: flex;
-      justify-content: center;
-      padding: 40px 0;
-    }
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: url("/mnt/data/218320592-e82de1d4-dca2-4a76-901a-7ca5c5b3fc95.png") center/cover fixed no-repeat;
+  background-color: #f7f6f1;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
 
-    .card {
-      width: 520px;
-      background: rgba(255,255,255,0.98);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-      border-radius: 4px;
-      overflow: hidden;
-    }
+.card {
+  width: 520px;
+  background: rgba(255,255,255,0.98);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  border-radius: 4px;
+  overflow: hidden;
+}
 
-    header {
-      padding: 18px 24px;
-      font-size: 20px;
-      font-weight: 600;
-      border-bottom: 1px solid #eee;
-    }
+ul#band {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-    ul#band {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+ul#band li {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+}
 
-    ul#band li {
-      display: flex;
-      align-items: center;
-      padding: 20px 24px;
-      border-bottom: 1px solid #eee;
-      font-size: 18px;
-    }
+ul#band li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #111;
+  margin-right: 18px;
+  margin-left: -6px;
+  border-radius: 1px;
+}
 
-    ul#band li::before {
-      content: "";
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background: #111;
-      margin-right: 18px;
-      margin-left: -6px;
-      border-radius: 1px;
-    }
+ul#band li:last-child {
+  border-bottom: none;
+}
 
-   
-    ul#band li:last-child {
-      border-bottom: none;
-    }
-
-    @media (max-width: 560px) {
-      .card { width: 92%; }
-      ul#band li { padding: 16px; font-size: 16px; }
-    }
+@media (max-width: 560px) {
+  .card { width: 92%; }
+  ul#band li { padding: 16px; font-size: 16px; }
+}
