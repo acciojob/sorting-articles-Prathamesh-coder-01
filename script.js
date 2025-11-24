@@ -14,16 +14,17 @@ const bands = [
   'An Old Dog'
 ];
 
-// Remove "a", "an", "the" from beginning
 function strip(str) {
   return str.replace(/^(a |an |the )/i, '').trim();
 }
+
 const sorted = bands.sort((a, b) => strip(a).localeCompare(strip(b)));
 
 const ul = document.getElementById('band');
 
-sorted.forEach(b => {
+sorted.forEach(band => {
   const li = document.createElement('li');
-  li.textContent = b;
+  li.textContent = band;
   ul.appendChild(li);
 });
+

@@ -49,3 +49,24 @@ ul#band li:last-child {
   .card { width: 92%; }
   ul#band li { padding: 16px; font-size: 16px; }
 }
+
+
+ul#band li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #111;
+  margin-right: 18px;
+  margin-left: -6px;
+  border-radius: 1px;
+}
+
+ul#band li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 560px) {
+  .card { width: 92%; }
+  ul#band li { padding: 16px; font-size: 16px; }
+}
